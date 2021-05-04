@@ -3,3 +3,9 @@
 //give it a width of 150px and a border radius of 50%
 
 //Hint: js use camelCased property names in JS! (backgroundColor not background-color, etc)
+
+document.getElementById("container").style.textAlign = "center";
+
+const image = document.querySelector("#container img");
+image.style.width = "150px";
+image.style.borderRadius = "50%";
