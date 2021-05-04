@@ -1,5 +1,5 @@
 const btn = document.querySelector("#v2")
 
-btn.onClick = function () {
+btn.onclick = function () {
   console.log("you clicked me")
 }

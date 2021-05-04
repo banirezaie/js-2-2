@@ -46,25 +46,23 @@
 
 //STYLE
 
-const allLinks = document.querySelectorAll("a")
+// const allLinks = document.querySelectorAll("a")
 
-for (let link of allLinks) {
-  //   console.log(link.style)
-  link.style.color = "olive" //inline style     => js
-  link.style.textDecorationColor = "magenta"
-  link.style.textDecorationStyle = "wavy"
-}
+// for (let link of allLinks) {
+//   console.log(link.style)
+//   link.style.color = "olive" //inline style     => js
+//   link.style.textDecorationColor = "magenta"
+//   link.style.textDecorationStyle = "wavy"
+// }
 
 //ClassList
 
 // const h2 = document.querySelector("h2")
-
+// console.log(h2)
 // h2.setAttribute("class", "purple")
 
 // h2.setAttribute("class", "border")
 
-// const currentClasses = h2.getAttribute("class")
-// console.log(currentClasses)
 
 //we can instead do:
 // h2.classList      please check the methods under classList in your console :)
@@ -72,9 +70,15 @@ for (let link of allLinks) {
 // h2.classList.add("purple")
 // h2.classList.add("border")
 
-// h2.classList.remove("border")
+// const currentClasses = h2.getAttribute("class")
+// console.log(currentClasses)
 
-// h2.classList.contains("border") //for test reasons     => output is a boolean
+// h2.classList.remove("border")
+// console.log(h2.classList)
+
+// h2.classList.contains("border")       //for test reasons     => output is a boolean
+
+// console.log(h2.classList.contains("border"))
 
 // h2.classList.toggle("purple") //test it in console      => it is useful when we want to toggle some items or fade them
 
@@ -90,13 +94,13 @@ for (let link of allLinks) {
 // const paragraph = firstBold.parentElement
 // console.log(paragraph.children)
 // console.log(paragraph.children[0])
-// console.log(paragraph.children[0])
+// console.log(paragraph.children[3])
 
 // const squareImg = document.querySelector(".square")
 // console.log(squareImg)
-// console.log(squareImg.nextSibling)
+// // console.log(squareImg.nextSibling)
 // console.log(squareImg.nextElementSibling)
-// console.log(squareImg.previousSibling)
+// // console.log(squareImg.previousSibling)
 // console.log(squareImg.previousElementSibling)
 
 //createElement
@@ -106,10 +110,10 @@ for (let link of allLinks) {
 // newImg.src =
 //   "https://images.unsplash.com/photo-1556796879-160fd67614ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80"
 
-//appendChild
-//don't forget body!!!
+// //appendChild
+// //don't forget body!!!
 // document.body.appendChild(newImg)
-// it is your very last element of the body
+// // it is your very last element of the body
 // newImg.classList.add("square")
 
 // const newH3 = document.createElement("h3")
@@ -119,12 +123,17 @@ for (let link of allLinks) {
 //Append
 
 // const p = document.querySelector("p")
-// p.append("I am new text hooooooooooorrrraaaaayyyyy", "new new new new new new")
+// p.append(
+//   "I am new text hooooooooooorrrraaaaayyyyy",
+//   "<b>second append is here</b>"
+// )
 
 // const newB = document.createElement("b")
 // newB.append("Hi!")
 // console.log(newB)
-// p.prepend("Hi!")
+// // p.append(newB)
+// p.prepend(newB)
+// // p.append(newB)
 
 //insertAdjacentElement
 //check MDN for those 4 possible actions
