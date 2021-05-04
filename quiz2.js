@@ -23,3 +23,17 @@ Task 3
 =======
 Write JavaScript below that changes the background colour of the page when the 'Change colour' button is clicked.
 */
+
+/*
+Task 4
+======
+When a user clicks the 'Add some text' button, a new paragraph should be added below the buttons that says "Read more below."
+*/
+
+
+
+/*
+Task 5
+======
+When the 'Larger links!' button is clicked, the text of all links on the page should increase.
+*/
