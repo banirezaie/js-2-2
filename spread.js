@@ -3,7 +3,7 @@
 // Math.max(13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43) //?
 // Math.min(13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43) //?
 
-// const nums = [13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43]
+const nums = [13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43]
 
 // console.log(Math.max(nums))
 
@@ -18,11 +18,10 @@
 
 /*       ARR           */
 
-// const cats = ["Persian", "British", "Devon"]
+// const cats = ["Persian", "British", "Devon"] //source code
 // const dogs = ["Greyhound", "Saluki", "Retriever"]
 
-// const allPets = [...cats]
-
+// const allPets = [...cats] //functional code
 // console.log(cats, allPets)
 
 // allPets.push("Scottish fold")
@@ -30,13 +29,13 @@
 
 // const allPets = [1, 2, 3, ...cats, ...dogs, "Dachshund"]
 // console.log(allPets)
-
-// console.log([..."hello"])
+// const hi = "hello"
+// console.log(hi, ...hi)
 
 /*            OBJ                 */
 
-// const foxhound = { legs: 4, family: "English, American" }
-// const bergamasco = { isFurry: true, family: "Persian sheepdog breed" }
+const foxhound = { legs: 4, family: "English, American" }
+const bergamasco = { isFurry: true, family: "Persian sheepdog breed" }
 
 // const rareDogs = { ...foxhound, color: "brown white black" }
 // console.log(rareDogs)
@@ -54,16 +53,16 @@
 
 // ANOTHER EXAMPLE:
 
-const dataFromForm = {
-  email: "fake@gmail.com",
-  password: "fakeFake123",
-  username: "fakeFunk",
-}
+// const dataFromForm = {
+//   email: "fake@gmail.com",
+//   password: "fakeFake123",
+//   username: "fakeFunk",
+// }
 
-const updateUser = {
-  ...dataFromForm,
-  id: "_1234",
-  isAdmin: false,
-  email: "notFake@gmail.com",
-}
-console.log(updateUser)
+// const updateUser = {
+//   ...dataFromForm,
+//   id: "_1234",
+//   isAdmin: false,
+//   email: "notFake@gmail.com",
+// }
+// console.log(updateUser)

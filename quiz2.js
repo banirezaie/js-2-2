@@ -12,6 +12,16 @@ Write JavaScript below that logs:
     --> should log a list of nodes with a length of 3
 */
 
+const p = document.querySelectorAll("p")
+console.log(p)
+const firstDiv = document.querySelector("div")
+console.log(firstDiv)
+const selectWithId = document.querySelector("#jumbotron-text")
+console.log(selectWithId)
+const oldWay = document.getElementById("jumbotron-text")
+console.log(oldWay)
+const allPInsideClass = document.querySelectorAll(".primary-content p")
+console.log(allPInsideClass)
 /*
 Task 2
 ======
