@@ -1,24 +1,29 @@
-// function sum() {
-//   console.log(arguments)
-// }
-// sum()
+//TODO Uncomment each section and give reasons for the output
 
-// function sum(...nums) {
-//   return console.log(
-//     nums,
-//     nums.reduce((acc, curr) => acc + curr)
-//   )
-// }
+/* 
+function sum() {
+	console.log(arguments);
+}
+sum();
+ */
 
-// sum(1, 2, 3)
+/* 
+function sum(...nums) {
+	return `${nums} => ${nums.reduce((acc, curr) => acc + curr)}`;
+}
 
-// ORDER MATTERS:
+console.log(sum(1, 2, 3)); //=> 1,2,3 => 6
+ */
 
-// function raceResults(gold, silver, ...others) {
-//   console.log(`gold medal goes to: ${gold}`)
-//   console.log(`silver medal goes to: ${silver}`)
-//   console.log(`Thanks to: ${others}`)
-// }
-// raceResults("Schumacher")
-// raceResults("Schumacher", "Hamilton")
-// raceResults("Schumacher", "Hamilton", "Vette", "Roseberg", "Button")
+//! ORDER MATTERS
+
+/* 
+function raceResults(gold, silver, ...others) {
+	console.log(`gold medal goes to: ${gold}`);
+	console.log(`silver medal goes to: ${silver}`);
+	console.log(`Thanks to: ${others}`);
+}
+raceResults("Schumacher");
+raceResults("Schumacher", "Hamilton");
+raceResults("Schumacher", "Hamilton", "Vette", "Roseberg", "Button");
+ */
