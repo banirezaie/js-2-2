@@ -1,32 +1,33 @@
 /*           Destructuring arrays            */
 
-// const scores = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+const scores = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
 // const highScore = scores[0]
 // const secondHighScore = scores[1]
 
-// const [gold, silver, bronze, ...others] = scores
+const [gold, silver, bronze, ...others] = scores
 
 // console.log(gold, silver, bronze, others)
 
 /*           Destructuring objects            */
 
-// const user = {
-//   email: "zarif@gmail.com",
-//   password: "asgharTala007",
-//   firstName: "MJ",
-//   lastName: "Zarif",
-//   born: 1950,
-//   bio:
-//     "MJ Zarif supposed people to be Kharrrrr and pretend to release a none releasable dodgy charand",
-//   tavileh: "khar farz kon",
-//   akhor: "Iran",
-// }
+const user = {
+  email: "zarif@gmail.com",
+  password: "asgharTala007",
+  firstName: "MJ",
+  lastName: "Zarif",
+  born: 1950,
+  bio:
+    "MJ Zarif supposed people to be Kharrrrr and pretend to release a none releasable dodgy charand",
+  tavileh: "khar farz kon",
+  akhor: "Iran",
+}
 
-// const firstName = user.firstName
+// let fName = user.firstName
 // const lastName = user.lastName
+// let lName = user.firstName
 
-// console.log(firstName, lastName)
+// console.log(fName, lName)
 
 // const { email, password, born, died, bio } = user
 
@@ -34,12 +35,11 @@
 
 // const { tavileh: role, akhor: country } = user
 
-// console.log(role, country)
 
 /*           Destructuring params            */
 
-// function nameRole(user) {
-//   return console.log(`${user.firstName} ${user.tavileh}`)
+// function nameRole(mamad) {
+//   return console.log(`${mamad.firstName} ${mamad.tavileh}`)
 // }
 // nameRole(user)
 
@@ -48,7 +48,7 @@
 // }
 // nameRole(user)
 
-categories = [
+const categories = [
   {
     color: "#f3c32c",
     name: "Housing",

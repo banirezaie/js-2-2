@@ -1,21 +1,20 @@
-// function rollDie(nmSides) {
-//   return Math.floor(Math.random() * nmSides) + 1
+// function rollDie(numSides) {
+//   return Math.floor(Math.random() * numSides) + 1
 // }
 
 // console.log(rollDie(6))
-console.log(rollDie())
+// console.log(rollDie())
 
 // function rollDie(numSides) {
 //   if (numSides === undefined) {
 //     numSides = 6
 //   }
-
 //   return Math.floor(Math.random() * numSides) + 1
 // }
 
-function rollDie(numSides = 6) {
-  return Math.floor(Math.random() * numSides) + 1
-}
+// function rollDie(numSides = 6) {
+//   return Math.floor(Math.random() * numSides) + 1
+// }
 
 //ORDER MATTERS HERE
 
@@ -42,4 +41,5 @@ function rollDie(numSides = 6) {
 // }
 
 // greet("Mozafar")
+// greet("Mozafar", "Heya")
 // greet("Mozafar", "hellooooo", "!!!!!")

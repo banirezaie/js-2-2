@@ -13,6 +13,9 @@ body {
 #banner {
     width: 100%;
 }
+#newBanner{
+    width: 20%;
+}
 img.square {
     width: 400px;
     object-fit: cover;
