@@ -1,129 +1,151 @@
-// const allImages = document.getElementsByTagName("img")
+//TODO Uncomment each section and guess the output!
 
-// for (let img of allImages) {
-//   img.src =
-//     "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Partridge_Silkie_hen.jpg/900px-Partridge_Silkie_hen.jpg"
-// }
+/* 
+const allImages = document.getElementsByTagName("img");
+for (let img of allImages) {
+	img.src =
+		"https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Partridge_Silkie_hen.jpg/900px-Partridge_Silkie_hen.jpg";
+}
+ */
 
-// const squareImages = document.getElementsByClassName("square")
+/* 
+const squareImages = document.getElementsByClassName("square");
+for (let img of squareImages) {
+	img.src =
+		"https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Partridge_Silkie_hen.jpg/900px-Partridge_Silkie_hen.jpg";
+}
+ */
 
-// for (let img of squareImages) {
-//   img.src =
-//     "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Partridge_Silkie_hen.jpg/900px-Partridge_Silkie_hen.jpg"
-// }
+/* ---------------------------------- QUERY --------------------------------- */
 
-//QUERY
+/* 
+const links = document.querySelectorAll("p a");
+for (let link of links) {
+	console.log(link.href);
+}
+ */
 
-// const links = document.querySelectorAll("p a")
+/* ---------------------------------- STYLE --------------------------------- */
 
-// for (let link of links) {
-//   console.log(link.href)
-// }
+/* 
+const allLinks = document.querySelectorAll("a");
+for (let link of allLinks) {
+	link.style.color = "olive";
+	link.style.textDecorationColor = "magenta";
+	link.style.textDecorationStyle = "wavy";
+}
+ */
 
-//STYLE
+/* -------------------------------- ClassList ------------------------------- */
 
-// const allLinks = document.querySelectorAll("a")
+/* 
+const h2 = document.querySelector("h2");
+h2.setAttribute("class", "purple");
+h2.setAttribute("class", "border");
 
-// for (let link of allLinks) {
-//   link.style.color = "olive"
-//   link.style.textDecorationColor = "magenta"
-//   link.style.textDecorationStyle = "wavy"
-// }
+const currentClasses = h2.getAttribute("class");
+console.log(currentClasses);
+ */
 
-//ClassList
+// We can instead do:
+// h2.classList      Please check the methods under classList in your console :)
 
-// const h2 = document.querySelector("h2")
+/* 
+h2.classList.add("purple");
+h2.classList.add("border");
 
-// h2.setAttribute("class", "purple")
+h2.classList.remove("border");
 
-// h2.setAttribute("class", "border")
+h2.classList.contains("border"); //for test reasons => output is a boolean
 
-// const currentClasses = h2.getAttribute("class")
-// console.log(currentClasses)
+h2.classList.toggle("purple"); //=> it is useful when we want to toggle some items or fade them
+ */
 
-//we can instead do:
-// h2.classList      please check the methods under classList in your console :)
+/* ------------------------- PROPERTIES AND METHODS ------------------------- */
 
-// h2.classList.add("purple")
-// h2.classList.add("border")
+/* 
+const firstBold = document.querySelector("b");
+console.log(firstBold);
 
-// h2.classList.remove("border")
+console.log(firstBold.parentElement);
+console.log(firstBold.parentElement.parentElement);
+console.log(firstBold.parentElement.parentElement.parentElement);
 
-// h2.classList.contains("border") //for test reasons     => output is a boolean
+const paragraph = firstBold.parentElement;
+console.log(paragraph.children);
+console.log(paragraph.children[0]);
+console.log(paragraph.children[2]);
 
-// h2.classList.toggle("purple") //test it in console      => it is useful when we want to toggle some items or fade them
+const squareImg = document.querySelector(".square");
+console.log(squareImg);
+console.log(squareImg.nextSibling); //=> returns #text!
+console.log(squareImg.nextElementSibling);
+console.log(squareImg.previousSibling); //=> returns #text!
+console.log(squareImg.previousElementSibling);
+ */
 
-//PROPERTIES AND METHODS
+/* ------------------------------ createElement ----------------------------- */
 
-// const firstBold = document.querySelector("b")
-// console.log(firstBold)
+/* 
+const newImg = document.createElement("img");
+console.dir(newImg);
+newImg.src =
+	"https://images.unsplash.com/photo-1556796879-160fd67614ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80";
+ */
 
-// console.log(firstBold.parentElement)
-// console.log(firstBold.parentElement.parentElement)
-// console.log(firstBold.parentElement.parentElement.parentElement)
+/* ------------------------------- appendChild ------------------------------ */
 
-// const paragraph = firstBold.parentElement
-// console.log(paragraph.children)
-// console.log(paragraph.children[0])
-// console.log(paragraph.children[0])
+/* 
+-// Don't forget body!!!
+document.body.appendChild(newImg);
+-// It is your very last element of the body
+newImg.classList.add("square");
 
-// const squareImg = document.querySelector(".square")
-// console.log(squareImg)
-// console.log(squareImg.nextSibling)
-// console.log(squareImg.nextElementSibling)
-// console.log(squareImg.previousSibling)
-// console.log(squareImg.previousElementSibling)
+const newH3 = document.createElement("h3");
+newH3.innerText = "I am a new h3";
+document.body.appendChild(newH3);
+ */
 
-//createElement
+/* --------------------------------- Append --------------------------------- */
 
-// const newImg = document.createElement("img")
-// console.dir(newImg)
-// newImg.src =
-//   "https://images.unsplash.com/photo-1556796879-160fd67614ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80"
+/* 
+const p = document.querySelector("p");
+p.append("I am new text hooooooooooorrrraaaaayyyyy", "new new new new new new");
 
-//appendChild
-//don't forget body!!!
-// document.body.appendChild(newImg)
-// it is your very last element of the body
-// newImg.classList.add("square")
+const newB = document.createElement("b");
+newB.append("Hi!");
+console.log(newB);
+p.prepend("Hi!");
+ */
 
-// const newH3 = document.createElement("h3")
-// newH3.innerText = "I am a new h3"
-// document.body.appendChild(newH3)
+/* -------------------------- insertAdjacentElement ------------------------- */
 
-//Append
+//TODO Check MDN for those 4 possible actions
 
-// const p = document.querySelector("p")
-// p.append("I am new text hooooooooooorrrraaaaayyyyy", "new new new new new new")
+/* 
+const h2 = document.createElement("h2");
+h2.append("adorable chickens");
 
-// const newB = document.createElement("b")
-// newB.append("Hi!")
-// console.log(newB)
-// p.prepend("Hi!")
+const h1 = document.querySelector("h1");
+h1.insertAdjacentElement("afterend", h2);
+ */
 
-//insertAdjacentElement
-//check MDN for those 4 possible actions
+/* --------------------------------- REMOVE --------------------------------- */
 
-// const h2 = document.createElement("h2")
-// h2.append("adorable chickens")
+/* 
+const firstLi = document.querySelector("li");
+firstLi.removeChild; //! It doesn't work!
 
-// const h1 = document.querySelector("h1")
+const ul = firstLi.parentElement;
+ul.removeChild(firstLi);
+ */
 
-// h1.insertAdjacentElement("afterend", h2)
+/* 
+const b = document.querySelector("b");
+b.parentElement.removeChild(b);
+ */
 
-//REMOVE
-
-// const firstLi = document.querySelector("li")
-// firstLi.removeChild      //it doesn't work
-
-// const ul = firstLi.parentElement
-// ul.removeChild(firstLi)
-
-//or if you want to take it in first go you can also:
-
-// const b = document.querySelector("b")
-// b.parentElement.removeChild(b)
-
-// or:
-// const img = document.querySelector("img")
-// img.remove()
+/* 
+const img = document.querySelector("img");
+img.remove();
+ */
