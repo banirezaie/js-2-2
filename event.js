@@ -1,32 +1,45 @@
-// const btn = document.querySelector("#v2")
-// console.log(btn)
-// console.dir(btn)
+//TODO Uncomment each section and guess the output!
 
-// btn.onclick = function () {
-//   console.log("you clicked me")
-// }
+/* 
+const btn = document.querySelector("#v2");
+console.log(btn);
+console.dir(btn);
 
-//and another way of writing codes here:
+btn.onclick = function () {
+	console.log("you clicked me");
+};
+ */
 
-// function scream() {
-//   console.log('AAAAAAAAAHHHHHH')
-//   console.log("STOP TOUCHING ME")
-// }
+/* 
+const btn = document.querySelector("#v2");
 
-// btn.onmouseenter = scream;
+function scream() {
+	console.log("AAAAAAAAAHHHHHH");
+	console.log("STOP TOUCHING ME");
+}
 
-//another way:
-// document.querySelector('h1').onclick = ()=> alert('enough here, go to next slide :)')
+btn.onmouseenter = scream;
+ */
 
-//addEventListener
+// document.querySelector("h1").onclick = () => alert("enough here, go to next slide :)");
 
-// const btn3 = document.querySelector('#v3');
-// btn3.addEventListener('dblclick', function () {
-//   alert('Clicked')
-// })
+/* ---------------------------- addEventListener ---------------------------- */
 
-// btn3.addEventListener('mouseup', function () {
-//   alert('Clicked for mouseup event')
-// })
+/* 
+const btn3 = document.querySelector("#v3");
+btn3.addEventListener("dblclick", function () {
+	alert("Clicked");
+});
+ */
 
-// btn3.addEventListener('click', scream, {once : true})
+/* 
+btn3.addEventListener("mouseup", function () {
+	alert("Clicked for mouseup event");
+});
+
+btn3.addEventListener("click", scream, { once: true });
+function scream() {
+	console.log("AAAAAAAAAHHHHHH");
+	console.log("STOP TOUCHING ME");
+}
+ */
