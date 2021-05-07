@@ -1,16 +1,24 @@
-//ABSOLUTELY ESSENTIAL FOR REACT JS
+//ABSOLUTELY ESSENTIALFOR REACT JS (کاملا ضروری برای ری اکت) 
+/* SPREAD:
+spread syntax allows an iterable such as an array to be expanded in places
+where  zero or more arguments (for function calls) or elements (for array literals)
+are expected , or an object experssion to be expanded in places where zero or more
+key- value pairs(for object literals) are expected.
+*/ 
 
-// Math.max(13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43) //?
-// Math.min(13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43) //?
+
+// Math.max(13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43) // show max number
+// Math.min(13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43) // show min number
 
 const nums = [13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43]
 
-// console.log(Math.max(nums))
+//  console.log(Math.max(nums)) //NaN
 
-// console.log(Math.max(...nums))
+//console.log(Math.max(...nums)) //spread 
 // console.log(Math.min(...nums))
-// console.log(nums)
-// console.log(...nums)
+//اسپریت برای هر چیزی واکنش متفاوتی دارد
+console.log(nums)
+console.log(...nums)
 
 // console.log("Hello")
 // console.log(..."Hello")
