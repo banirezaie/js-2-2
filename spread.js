@@ -16,21 +16,33 @@ const nums = [13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43]
 
 //console.log(Math.max(...nums)) //spread 
 // console.log(Math.min(...nums))
+
 //اسپریت برای هر چیزی واکنش متفاوتی دارد
-console.log(nums)
-console.log(...nums)
+
+// console.log(nums) // array looks like Object   ارای را مانند ابجکت نگاه میکند
+// console.log(...nums) // spread it looks at everything inside  مجموعه ای از اعداد 
 
 // console.log("Hello")
-// console.log(..."Hello")
-// console.log("H", "e", "l", "l")
+
+// they are same => console.log(..."Hello") = console.log("H", "e", "l", "l", "o")
+// console.log(..."Hello") 
+// console.log("H", "e", "l", "l", "o")
+
 
 /*       ARR           */
 
-// const cats = ["Persian", "British", "Devon"] //source code
+const cats = ["Persian", "British", "Devon"] //source code
 // const dogs = ["Greyhound", "Saluki", "Retriever"]
 
-// const allPets = [...cats] //functional code
-// console.log(cats, allPets)
+//
+const allPets = [...cats] //functional code  => spread in array 
+// let allPets = cats
+
+//COME BACK
+
+// allPets = ["cats","dogs"]
+
+console.log(cats, allPets)
 
 // allPets.push("Scottish fold")
 // console.log(cats, allPets)
@@ -51,13 +63,13 @@ const bergamasco = { isFurry: true, family: "Persian sheepdog breed" }
 // const rareDogs = { ...foxhound, ...bergamasco }
 // console.log(rareDogs)
 
-// const rareDogs = { ...foxhound, ...bergamasco, family: "mixed" }
-// console.log(rareDogs)
+//const rareDogs = { ...foxhound, ...bergamasco, family: "mixed" }
+//console.log(rareDogs)
 
 // ARR and strings spread into an object:
 
-// console.log({ ...[1, 2, 3] })
-// console.log({ ..."Hello" })
+//console.log({ ...[1, 2, 3] })
+//console.log({ ..."Hello" })
 
 // ANOTHER EXAMPLE:
 

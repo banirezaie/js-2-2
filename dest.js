@@ -2,12 +2,12 @@
 
 const scores = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
-// const highScore = scores[0]
-// const secondHighScore = scores[1]
+ const highScore = scores[0]
+ const secondHighScore = scores[1]
 
 const [gold, silver, bronze, ...others] = scores
 
-// console.log(gold, silver, bronze, others)
+ console.log(gold, silver, bronze, others)
 
 /*           Destructuring objects            */
 

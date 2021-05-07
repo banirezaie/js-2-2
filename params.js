@@ -30,11 +30,12 @@ function rollDie(numSides = 6) {
 
 // greet("hello", "Mozafar")
 
-// function greet(msg = "Hey there", person) {
+// function greet(msg = "Hey there", person) { // همیشه باید پارامتر هایی رو که دیفالت دارند آخر بنویسیم
 //   console.log(`${msg} , ${person}`)
 // }
 
-// greet("Mozafar")
+// greet("Mozafar") // Mozafar , undefind    // person => undefind 
+// because our function can not understand that "Mozafar" is a name of person and msg => "Mozafar"
 
 // function greet(person, msg = "Hey there") {
 //   console.log(`${msg} , ${person}`)
@@ -45,8 +46,9 @@ function rollDie(numSides = 6) {
 function greet(person, msg = "Hey there", punc = "!") {
   console.log(`${msg} , ${person}${punc}`)
 }
+//order is very importent
 
-// greet()
-// greet("Mozafar")
-// greet("Mozafar", "Heya")
-// greet("Mozafar", "hellooooo", "!!!!!")
+// greet()   // person => undefind
+// greet("Mozafar")   //Hey there  Mozafar!
+greet("Mozafar", "Heya")  // Heya , Mozafar
+greet("Mozafar", "hellooooo", "!!!!!")   // hellooooo , Mozafar!!!!!
