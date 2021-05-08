@@ -1,5 +1,5 @@
-// const allImages = document.getElementsByTagName("img")
-// console.log(allImages)
+const allImages = document.getElementsByTagName("img")
+// console.log(allImages) //show us HTMLCollection , it's not array
 // for (let img of allImages) {
 //   img.src =
 //     "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=963&q=80"
@@ -13,8 +13,13 @@
 //     "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=963&q=80"
 // }
 
-//QUERY
+// const notExisted =document.getElementById("alaki")
+// console.log(notExisted)  //Null   => HTMLCollection khali
 
+//QUERY selector 
+
+const allLinks = document.getElementsByTagName('a')
+console.log(allLinks)
 // const links = document.querySelectorAll("p a")
 // console.log(links)
 // for (let link of links) {
@@ -46,7 +51,7 @@
 
 //STYLE
 
-const allLinks = document.querySelectorAll("a")
+// const allLinks = document.querySelectorAll("a")
 
 for (let link of allLinks) {
   //   console.log(link.style)

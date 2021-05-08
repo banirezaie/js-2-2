@@ -1,0 +1,173 @@
+IMD-1 JS-2-2
+New JavaScript features and DOM
+
+Default Params
+If we do not pass a param we 
+want a default (sometimes)
+Params.js
+
+
+Spread
+ Spread syntax allows an iterable such as an array 
+to be expanded in places where zero or more 
+arguments (for function calls) or elements (for array 
+literals) are expected, or an object expression to 
+be expanded in places where zero or more keyvalue pairs (for object literals) are expected.
+ Spread.js
+
+
+
+REST
+Rest looks like spread, but it’s not! ARGUMENTS OBJECT
+Available inside every function
+It’s an array-like object
+•Has a length property
+•Does not have array methods like push/pop
+Contains all arguments passed to the 
+function
+Not available inside of arrow functions!
+Rest.js
+
+
+
+Destructuring
+ A short, clean syntax to unpack:
+ Values from arrays
+ Properties from objects
+ Into distinct variable
+ Dest.js
+
+
+
+DOM
+Document Object Model
+ What is document? (use console.dir(document) to see what it is)
+ To see a bit more type console.all 
+ javaScript representation of a webpage
+ It’s your JS “window” into the contents of a webpage
+ You already know what window is.
+ It’s just a bunch of objects that you can interact with via JS
+
+
+Selecting 
+ getElementById
+ getElementsByTagName
+ It’s NOT an array, it is HTMLCollection / knows some of methods not all
+ HTMLCollection contain “Elements” (with capital E of course )
+ getElementsByClassName
+ For unknown names we receive an empty HTMLCollection []
+ Open index.html in a browser (chrome is preferred in this case)
+ To see the document of object use console.dir(_yourIdHere_)
+ Open app.js
+
+
+
+
+
+Query selector
+same selectors with CSS selectors 
+ A newer, all-in-one method to select a single element
+ querySelector() => to have first match
+ document.querySelector(‘h1’)
+ document.querySelector(‘#red’)
+ document.querySelector(‘.big’)
+ document.querySelector(‘img:nth-of-type(2)’)
+ document.querySelector(‘a[title=”Java”]’)
+ querySelectorAll() => to have all matches
+ Exact same idea, but just gives you all matches
+
+
+
+
+Manipulate DOM
+properties and methods
+ innerText (1)
+ textContent (2)
+ innerHTML (3)(q3) 
+ Value
+ parentElement
+ Children
+ nextSibling
+ previouseSibling
+ style
+ classList
+ getAttribute()
+ setAttribute()
+ appendChild()
+ Append()
+ Prepend()
+ removeChild()
+ Remove()
+ createElement()
+
+
+
+
+Attribute Selector
+ You can change for example is with:
+ Document.querySelector(‘#anything’).id = “newname”
+ Or we can use: Document.querySelector(‘#anything’).getAttribute(‘id’)
+ We can also set attribute
+
+
+
+
+
+Changing style
+What does .style shows us? 
+What is window.getComputedStyle? 
+(NOT IMPORTANT)
+
+
+ClassList
+ Continue app.js
+ We have two silly classes in app.css, please take a look at them
+
+
+PROPERTIES AND METHODS
+ parentElement
+ Children
+ nextSibling - nextElementSibling
+ previousSibling -previousElementSibling
+ createElement
+ appendChild
+ Append
+ insertAdjacentElement()
+ Make sure you check MDN for full documentation of this
+
+
+
+
+Remove
+ removeChild and remove
+ Remember we can not remove the child directly with 
+removeChild and we need to receive the parent element.
+
+
+Events
+ Clicks
+ Drags
+ Drops
+ Hovers
+ Scrolls
+ Form submission
+ Key presses
+ Focus/blur
+ Mouse wheel
+ Double click
+ Copying
+ Pasting
+ Audio start
+ Screen resize
+ printing
+
+
+
+
+Event 
+ Go to newIndex.html and event.js
+ Go up to v2 id
+
+
+
+

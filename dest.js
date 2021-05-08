@@ -1,3 +1,11 @@
+//Destructuring
+/*A short, clean syntax to unpack:
+-Values from arrays
+-Properties from objects
+-Into distinct variable
+شکستن ساختار
+*/
+
 /*           Destructuring arrays            */
 
 const scores = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
@@ -5,9 +13,12 @@ const scores = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
  const highScore = scores[0]
  const secondHighScore = scores[1]
 
+ //destructuring  => we have array in left side
 const [gold, silver, bronze, ...others] = scores
+//...others => is the spread that in the array
 
- console.log(gold, silver, bronze, others)
+//  console.log(gold, silver, bronze, others)
+// console.log(...others) // the array than we make it destructuring
 
 /*           Destructuring objects            */
 
@@ -29,12 +40,15 @@ const user = {
 
 // console.log(fName, lName)
 
-// const { email, password, born, died, bio } = user
+
+const { email, password, born, died, bio } = user
 
 // console.log(email, password, born, died, bio)
 
-// const { tavileh: role, akhor: country } = user
+const { tavileh: role, akhor: country } = user
+// console.log(role, country)
 
+//undefined => trif nashode    notdefined=> to tarifsh nkardi
 
 /*           Destructuring params            */
 
@@ -42,13 +56,14 @@ const user = {
 //   return console.log(`${mamad.firstName} ${mamad.tavileh}`)
 // }
 // nameRole(user)
-
-// function nameRole({ firstName, lastName, tavileh }) {
-//   return console.log(`${firstName} ${lastName} ${tavileh}`)
-// }
+//توی فاکشن سری ولیو ها از ابجکت میخواهیم
+function nameRole({ firstName, lastName, tavileh }) {
+  return console.log(`${firstName} ${lastName} ${tavileh}`)
+}
 // nameRole(user)
 
 const categories = [
+  //array of object
   {
     color: "#f3c32c",
     name: "Housing",
