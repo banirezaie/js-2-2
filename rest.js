@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //est looks like spread, but it’s not!
 
 /*ARGUMENTS OBJECT
@@ -13,6 +14,11 @@ Not available inside of arrow functions!
 function sum() {
   console.log(arguments) // arguments arenot string not object not array not spread
 }
+=======
+// function sum() {
+//   console.log(arguments)
+// }
+>>>>>>> parent of 106c947 (zahra)
 // sum()
 
 //rest => ...nums       in arrow function we can't use rest

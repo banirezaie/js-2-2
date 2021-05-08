@@ -10,15 +10,19 @@
 
 const scores = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
- const highScore = scores[0]
- const secondHighScore = scores[1]
+// const highScore = scores[0]
+// const secondHighScore = scores[1]
 
  //destructuring  => we have array in left side
 const [gold, silver, bronze, ...others] = scores
 //...others => is the spread that in the array
 
+<<<<<<< HEAD
 //  console.log(gold, silver, bronze, others)
 // console.log(...others) // the array than we make it destructuring
+=======
+// console.log(gold, silver, bronze, others)
+>>>>>>> parent of 106c947 (zahra)
 
 /*           Destructuring objects            */
 
