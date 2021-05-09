@@ -12,16 +12,13 @@ Write JavaScript below that logs:
     --> should log a list of nodes with a length of 3
 */
 
-const p = document.querySelectorAll("p")
-console.log(p)
-const firstDiv = document.querySelector("div")
-console.log(firstDiv)
-const selectWithId = document.querySelector("#jumbotron-text")
-console.log(selectWithId)
-const oldWay = document.getElementById("jumbotron-text")
-console.log(oldWay)
-const allPInsideClass = document.querySelectorAll(".primary-content p")
-console.log(allPInsideClass)
+console.log(document.querySelectorAll("p"))
+console.log(document.querySelector('div')) //just first div
+console.log(document.querySelector('#jumbotron-text')) // first jumbotron-text ID
+console.log(document.getElementById('jumbotron-text')) // old way
+console.log(document.querySelectorAll('.primary-content p'))
+
+
 /*
 Task 2
 ======
@@ -33,3 +30,4 @@ Task 3
 =======
 Write JavaScript below that changes the background colour of the page when the 'Change colour' button is clicked.
 */
+

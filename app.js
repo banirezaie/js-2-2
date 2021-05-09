@@ -1,63 +1,73 @@
-const allImages = document.getElementsByTagName("img")
+// const allImages = document.getElementsByTagName("img")
 // console.log(allImages) //show us HTMLCollection , it's not array
 // for (let img of allImages) {
 //   img.src =
-//     "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=963&q=80"
-// }
+//    "https://www.next-t.co.kr/public/uploads/7b7f7e2138e29e598cd0cdf2c85ea08d.jpg"}
 
 //     const squareImages = document.getElementsByClassName("square")
 //     console.log(squareImages)
 
 // for (let img of squareImages) {
 //   img.src =
-//     "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=963&q=80"
-// }
+// "https://www.next-t.co.kr/public/uploads/7b7f7e2138e29e598cd0cdf2c85ea08d.jpg"}
 
 // const notExisted =document.getElementById("alaki")
 // console.log(notExisted)  //Null   => HTMLCollection khali
 
 //QUERY selector 
 
-const allLinks = document.getElementsByTagName('a')
-console.log(allLinks)
+// const allLinks = document.getElementsByTagName('a')
+// console.log(allLinks)
+//HTMLCollection(24) [a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a.mw-redirect, a, a, a, a]
+
+//querySelectorAll() ==> method can be used to access all elements which match with a specified CSS selector.
+//To return all matches, querySelectorAll has to be used
+//querySelector() ==> methodcan only be used to access a single element
+// to return a single match, querySelector is used.
 // const links = document.querySelectorAll("p a")
 // console.log(links)
+//NodeList(17) [a, a, a, a, a, a, a, a, a, a, a, a, a.mw-redirect, a, a, a, a]
+
 // for (let link of links) {
-//   console.log(link.href)
+  // console.log(link.href)
 // }
 
 //INNER TEXT HTML
 
-// const p = document.querySelectorAll('p')
-// console.log(p.innerText)
-// console.log(p.textContent)
+
+// console.log(document.querySelectorAll('b'))
+// let p = document.querySelectorAll('p')
+// console.log(p)
 // for (let ps of p) {
-//   ps.innerText = "<b>IMD team is incredible</b>"
-//   ps.textContent = "<b>IMD team is fantastic</b>"
-//   ps.innerHTML = "<b>IMD team is fascinating by coding</b>"
+  //innerText returns all text contained by an element and all its child elements.
+  // ps.innerText = "<b>IMD team is incredible</b>"
+  //textContents is all text contained by an element and all its children that are for formatting purposes only.
+  // ps.textContent = "<b>IMD team is fantastic</b>"
+  //innerHtml returns all text, including html tags, that is contained by an element.
+  // ps.innerHTML = "<b>IMD team is fascinating by coding</b>"
 // }
 
 //ATTRIBUTE SELECTOR
 
 // let newBanner = document.querySelector('img')
 // newBanner.id = "newBanner"
-// newBanner.src =
-//   "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Partridge_Silkie_hen.jpg/900px-Partridge_Silkie_hen.jpg"
+// newBanner.src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWmEvc5X462ESJGvN2pGq3vScK4hDkm6g-QnVntlsz8XHdsGerBazKDoew0YnXgz6jXfQ&usqp=CAU"
 // newBanner.alt = "dumb chicken"
 // console.log(newBanner)
 
-// let newBanner = document.querySelector("img").setAttribute('id', 'newBanner')
+// let newBanner = document.querySelector("img").getAttribute('id') //get just one paramert
+// let newBanner = document.querySelector("img").setAttribute('id', 'newBanner') // set just towe paramert
 // console.log(newBanner)
 
 //STYLE
 
-// const allLinks = document.querySelectorAll("a")
+const allLinks = document.querySelectorAll("a")
 
 for (let link of allLinks) {
-  //   console.log(link.style)
-  link.style.color = "olive" //inline style     => js
-  link.style.textDecorationColor = "magenta"
-  link.style.textDecorationStyle = "wavy"
+  console.log(link.style)
+  // link.style.color = "olive" //inline style     => js
+  // link.style.textDecorationColor = "magenta"
+  // link.style.textDecorationStyle = "wavy"
 }
 
 //ClassList

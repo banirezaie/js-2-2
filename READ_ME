@@ -50,12 +50,12 @@ Document Object Model
 
 
 Selecting 
- getElementById
- getElementsByTagName
+ getElementById => id منصر به فرد هستش
+ getElementsByTagName => div , label, span, input, h2,....
  It’s NOT an array, it is HTMLCollection / knows some of methods not all
  HTMLCollection contain “Elements” (with capital E of course )
  getElementsByClassName
- For unknown names we receive an empty HTMLCollection []
+ For unknown names we receive an empty HTMLCollection [] => data starcher //object and array
  Open index.html in a browser (chrome is preferred in this case)
  To see the document of object use console.dir(_yourIdHere_)
  Open app.js
@@ -67,7 +67,7 @@ Selecting
 Query selector
 same selectors with CSS selectors 
  A newer, all-in-one method to select a single element
- querySelector() => to have first match
+ querySelector() => "to have first match"
  document.querySelector(‘h1’)
  document.querySelector(‘#red’)
  document.querySelector(‘.big’)
@@ -81,9 +81,12 @@ same selectors with CSS selectors 
 
 Manipulate DOM
 properties and methods
- innerText (1)
- textContent (2)
- innerHTML (3)(q3) 
+ innerText =>  returns all text contained by an element and all its child elements.
+کل متن
+ textContent =>  is all text contained by an element and all its children that are for formatting purposes only.
+کل متن با همون فرمتی که هست
+ innerHTML => returns all text, including html tags, that is contained by an element.
+(q3) 
  Value
  parentElement
  Children
@@ -103,11 +106,11 @@ properties and methods
 
 
 
-Attribute Selector
+Attribute Selector => ویژگی های هر تگ میگیم اتریبیوت
  You can change for example is with:
  Document.querySelector(‘#anything’).id = “newname”
  Or we can use: Document.querySelector(‘#anything’).getAttribute(‘id’)
- We can also set attribute
+ We can also set attribute('id', 'newBanner')
 
 
 
