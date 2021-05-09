@@ -47,7 +47,7 @@ document.getElementById("bgrChangeBtn").onclick = () => changeColor();
 
 const changeColor = () => (document.body.style.backgroundColor = color());
 const color = () => `rgb(${randomNum()}, ${randomNum()}, ${randomNum()})`;
-const randomNum = () => Math.floor(Math.random() * 255) + 1;
+const randomNum = () => Math.floor(Math.random() * 256);
 
 // A random color with hex code
 
