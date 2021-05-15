@@ -154,6 +154,18 @@ h1.insertAdjacentElement("beforebegin", h2)    //Before the targetElement itself
 // h1.insertAdjacentElement("afterbegin", h2)   //Just inside the targetElement, before its first child
 // h1.insertAdjacentElement("beforeend", h2)    // Just inside the targetElement, after its last child.
 // h1.insertAdjacentElement("afterend", h2)    // After the targetElement itself.
+
+/*
+<!-- beforebegin -->
+<p>
+  <!-- afterbegin -->
+  foo
+  <!-- beforeend -->
+</p>
+<!-- afterend -->
+*/
+
+
 //REMOVE
 
 // const firstLi = document.querySelector("li")
