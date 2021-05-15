@@ -61,21 +61,21 @@
 
 //STYLE
 
-const allLinks = document.querySelectorAll("a")
-
-for (let link of allLinks) {
-  console.log(link.style)
+// const allLinks = document.querySelectorAll("a")
+// console.log(allLinks)  // all links a
+// console.log(allLinks.style.backgroundColor = "pink" )
+// for (let link of allLinks) {
+  // console.log(link.style)
   // link.style.color = "olive" //inline style     => js
   // link.style.textDecorationColor = "magenta"
   // link.style.textDecorationStyle = "wavy"
-}
+// }
 
 //ClassList
 
 // const h2 = document.querySelector("h2")
-
-// h2.setAttribute("class", "purple")
-
+// console.log(h2)
+// h2.setAttribute("class", "purple") 
 // h2.setAttribute("class", "border")
 
 // const currentClasses = h2.getAttribute("class")
@@ -89,23 +89,24 @@ for (let link of allLinks) {
 
 // h2.classList.remove("border")
 
-// h2.classList.contains("border") //for test reasons     => output is a boolean
+// console.log(h2.classList.contains("border")) //for test reasons     => output is a boolean
 
 // h2.classList.toggle("purple") //test it in console      => it is useful when we want to toggle some items or fade them
+
 
 //PROPERTIES AND METHODS
 
 // const firstBold = document.querySelector("b")
 // console.log(firstBold)
 
-// console.log(firstBold.parentElement)
-// console.log(firstBold.parentElement.parentElement)
-// console.log(firstBold.parentElement.parentElement.parentElement)
+// console.log(firstBold.parentElement) // tag p
+// console.log(firstBold.parentElement.parentElement) // body
+// console.log(firstBold.parentElement.parentElement.parentElement) //html
 
 // const paragraph = firstBold.parentElement
-// console.log(paragraph.children)
+// console.log(paragraph.children) //HTMLCollection(8) [b, b, a, a, a, a, a, a]
 // console.log(paragraph.children[0])
-// console.log(paragraph.children[0])
+// console.log(paragraph.children[3])
 
 // const squareImg = document.querySelector(".square")
 // console.log(squareImg)
@@ -119,8 +120,7 @@ for (let link of allLinks) {
 // const newImg = document.createElement("img")
 // console.dir(newImg)
 // newImg.src =
-//   "https://images.unsplash.com/photo-1556796879-160fd67614ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80"
-
+  // "https://i2-prod.mirror.co.uk/incoming/article21668272.ece/ALTERNATES/s615/0_pepper-dog-1.jpg"
 //appendChild
 //don't forget body!!!
 // document.body.appendChild(newImg)
@@ -131,26 +131,29 @@ for (let link of allLinks) {
 // newH3.innerText = "I am a new h3"
 // document.body.appendChild(newH3)
 
-//Append
+//Append => add in the end of       Prepend => add in the beginning
 
 // const p = document.querySelector("p")
+// p.innerText="hihjghjghfghfhfcgcdfgdxdfzsdxgfhbjn/."
 // p.append("I am new text hooooooooooorrrraaaaayyyyy", "new new new new new new")
 
 // const newB = document.createElement("b")
-// newB.append("Hi!")
+// p.append("Hi!")
 // console.log(newB)
-// p.prepend("Hi!")
+// newB.prepend("Hi!")
 
 //insertAdjacentElement
 //check MDN for those 4 possible actions
 
-// const h2 = document.createElement("h2")
-// h2.append("adorable chickens")
+const h2 = document.createElement("h2")
+h2.append("adorable chickens")
+// console.log(h2)
+const h1 = document.querySelector("h1")
 
-// const h1 = document.querySelector("h1")
-
-// h1.insertAdjacentElement("afterend", h2)
-
+h1.insertAdjacentElement("beforebegin", h2)    //Before the targetElement itself.
+// h1.insertAdjacentElement("afterbegin", h2)   //Just inside the targetElement, before its first child
+// h1.insertAdjacentElement("beforeend", h2)    // Just inside the targetElement, after its last child.
+// h1.insertAdjacentElement("afterend", h2)    // After the targetElement itself.
 //REMOVE
 
 // const firstLi = document.querySelector("li")

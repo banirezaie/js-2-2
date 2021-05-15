@@ -4,6 +4,11 @@
 
 //Hint: js use camelCased property names in JS! (backgroundColor not background-color, etc)
 
-let newDiv = document.querySelector("div")
-// console.log(newDiv.style)
-// newDiv.style.
+let newDiv = document.querySelector("#container")
+newDiv.style.textAlign = "center";
+
+let newImg = document.querySelector("img")
+newImg.style.width = "150px";
+newImg.style.borderRadius = "50%"
+
+
