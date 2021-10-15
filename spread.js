@@ -1,69 +1,89 @@
-//ABSOLUTELY ESSENTIAL FOR REACT JS
+//! ABSOLUTELY ESSENTIAL FOR REACT JS
+//TODO Uncomment each section and give reasons for the output
 
-// Math.max(13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43) //?
-// Math.min(13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43) //?
+/* ------------------------- SPREAD ARRAY OF NUMBERS ------------------------ */
 
-// const nums = [13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43]
+/* 
+Math.max(13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43); //?
+Math.min(13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43); //?
 
-// console.log(Math.max(nums))
+const nums = [13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43];
 
-// console.log(Math.max(...nums))
-// console.log(Math.min(...nums))
-// console.log(nums)
-// console.log(...nums)
+console.log(Math.max(nums)); //=> NaN
 
-// console.log("Hello")
-// console.log(..."Hello")
-// console.log("H", "e", "l", "l")
+console.log(Math.max(...nums)); //=> 7665
+console.log(Math.min(...nums)); //=> 3
 
-/*       ARR           */
+console.log(nums); //=> [13, 4, 5, 21, 3, 3, 3, 7665, 7, 4, 74, 3, 4, 6, 43]
+console.log(...nums); //=> 13 4 5 21 3 3 3 7665 7 4 74 3 4 6 43
+ */
 
-// const cats = ["Persian", "British", "Devon"]
-// const dogs = ["Greyhound", "Saluki", "Retriever"]
+/* ------------------------------ SPREAD STRING ----------------------------- */
 
-// const allPets = [...cats]
+/*
+console.log("Hello"); //=> Hello
+console.log(..."Hello"); //=> H e l l o
+console.log("H", "e", "l", "l", "o"); //=> H e l l o
+ */
 
-// console.log(cats, allPets)
+/* ------------------------- SPREAD ARRAY OF STRING ------------------------- */
 
-// allPets.push("Scottish fold")
-// console.log(cats, allPets)
+/* 
+const cats = ["Persian", "British", "Devon"];
+const dogs = ["Greyhound", "Saluki", "Retriever"];
 
-// const allPets = [1, 2, 3, ...cats, ...dogs, "Dachshund"]
-// console.log(allPets)
+let allPets;
+allPets = [...cats];
+console.log(cats, allPets); //=> [ 'Persian', 'British', 'Devon' ] [ 'Persian', 'British', 'Devon' ]
 
-// console.log([..."hello"])
+allPets.push("Scottish fold");
+console.log(cats, allPets); //=> [ 'Persian', 'British', 'Devon' ] [ 'Persian', 'British', 'Devon', 'Scottish fold' ]
 
-/*            OBJ                 */
+allPets = [1, 2, 3, ...cats, ...dogs, "Dachshund"];
+console.log(allPets); //=> [1, 2, 3, "Persian", "British", "Devon", "Greyhound", "Saluki", "Retriever", "Dachshund"]
 
-// const foxhound = { legs: 4, family: "English, American" }
-// const bergamasco = { isFurry: true, family: "Persian sheepdog breed" }
+console.log([..."hello"]); //=> [ 'h', 'e', 'l', 'l', 'o' ]
+ */
 
-// const rareDogs = { ...foxhound, color: "brown white black" }
-// console.log(rareDogs)
+/* ------------------------------ SPREAD OBJECT ----------------------------- */
 
-// const rareDogs = { ...foxhound, ...bergamasco }
-// console.log(rareDogs)
+/* 
+const foxhound = { legs: 4, family: "English, American" };
+const Bergamasco = { isFurry: true, family: "Persian sheepdog breed" };
 
-// const rareDogs = { ...foxhound, ...bergamasco, family: "mixed" }
-// console.log(rareDogs)
+let rareDogs;
+rareDogs = { ...foxhound, color: "brown white black" };
+console.log(rareDogs); //=> { legs: 4, family: 'English, American', color: 'brown white black' }
 
-// ARR and strings spread into an object:
+rareDogs = { ...foxhound, ...Bergamasco };
+console.log(rareDogs); //=> { legs: 4, family: 'Persian sheepdog breed', isFurry: true }
 
-// console.log({ ...[1, 2, 3] })
-// console.log({ ..."Hello" })
+rareDogs = { ...foxhound, ...Bergamasco, family: "mixed" };
+console.log(rareDogs); //=> { legs: 4, family: 'mixed', isFurry: true }
+ */
 
-// ANOTHER EXAMPLE:
+/* ----------------- ARRAY AND STRING SPREAD INTO AN OBJECT ----------------- */
 
+/* 
+console.log({ ...[1, 2, 3] }); //=> { '0': 1, '1': 2, '2': 3 }
+console.log({ ..."Hello" }); //=> { '0': 'H', '1': 'e', '2': 'l', '3': 'l', '4': 'o' }
+ */
+
+/* ----------------------------- ANOTHER EXAMPLE ---------------------------- */
+
+/* 
 const dataFromForm = {
-  email: "fake@gmail.com",
-  password: "fakeFake123",
-  username: "fakeFunk",
-}
+	email: "fake@gmail.com",
+	password: "fakeFake123",
+	username: "fakeFunk",
+};
 
 const updateUser = {
-  ...dataFromForm,
-  id: "_1234",
-  isAdmin: false,
-  email: "notFake@gmail.com",
-}
-console.log(updateUser)
+	...dataFromForm,
+	id: "_1234",
+	isAdmin: false,
+	email: "notFake@gmail.com",
+};
+
+console.log(updateUser); //=> { email: "notFake@gmail.com", password: "fakeFake123", username: "fakeFunk", id: "_1234", isAdmin: false }
+ */

@@ -1,6 +1,7 @@
 html,
 body {
-	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-family: "Source Sans Pro", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+		Arial, sans-serif;
 }
 
 .site-footer {
@@ -45,7 +46,7 @@ body {
 }
 
 .alert:before {
-	content: '';
+	content: "";
 	position: absolute;
 	left: -1px;
 	top: 0;
@@ -71,7 +72,7 @@ body {
 }
 
 .heading-underline:before {
-	content: '';
+	content: "";
 	position: absolute;
 	bottom: -1px;
 	left: 0;
@@ -121,18 +122,18 @@ body {
 
 #addArticleBtn {
 	margin-left: 20px;
-    height: 37px;
+	height: 37px;
 }
 
 .colorButton {
 	margin-bottom: 20px;
-    margin-right: 20px;
-    width: 100px;
-    height: 50px;
+	margin-right: 20px;
+	width: 100px;
+	height: 50px;
 }
 
 #blueBtn {
-    background: #588fbd;
+	background: #588fbd;
 }
 
 #orangeBtn {
@@ -140,12 +141,11 @@ body {
 }
 
 #greenBtn {
-	background: #87ca8a
+	background: #87ca8a;
 }
 
 @media screen and (min-width: 992px) {
-
 	.navbar-brand > img {
-	   max-height: 80px;
+		max-height: 80px;
 	}
 }
